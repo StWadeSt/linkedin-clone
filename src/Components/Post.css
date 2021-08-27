@@ -5,6 +5,11 @@
   margin-bottom: 15px;
 }
 
+.post_layout {
+  display: flex;
+  justify-content: center;
+}
+
 .post__content > img {
   object-fit: contain;
   height: 800px;

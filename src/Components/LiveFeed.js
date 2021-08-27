@@ -8,13 +8,13 @@ import NewsIcon from '@material-ui/icons/CalendarViewDay';
 import CalendarToday from '@material-ui/icons/CalendarToday';
 import Post from './Post';
 import image from '../images/profile_image.jpg';
-import { database } from './firebase';
+//import { database } from './firebase';
 
 function LiveFeed() {
 
     const [posts, setPosts] = useState([]);
 
-    useEffect(() => {
+   /* useEffect(() => {
         database.collection("posts").orderBy('timestamp', 'desc').onSnapshot(snapshot => (
           setPosts(snapshot.docs.map(doc => (
             {
@@ -24,6 +24,7 @@ function LiveFeed() {
           )))
         ))
       }, [])
+    */
 
     const sendPost = (event) =>{
         event.preventDefault();
@@ -49,16 +50,14 @@ function LiveFeed() {
                 </div>
             </div>
 
-            {posts.map((post) => (
-                <Post 
+            {/*{posts.map((post) => ()}*/}
+            <Post 
                 
                 name="Stuart Stuurman" 
                 profession="Dip Software Development Graduate" 
                 message="Good day at work" 
                 photoUrl={image}
             />
-            ))}
-            
         </div>
     )
 }

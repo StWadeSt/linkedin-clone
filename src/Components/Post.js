@@ -10,16 +10,20 @@ import SendIcon from '@material-ui/icons/Send'
 function Post({ name, profession, message, photoUrl }) {
     return (
         <div className="post">
-            <div className="post__top">
-                <Avatar className="profile_image"/>
-                <div className="description">
-                    <h3>{name}</h3>
-                    <h4>{profession}</h4>
+            <div className="post_layout">
+                <div>
+                    <div className="post__top">
+                        <Avatar className="profile_image"/>
+                        <div className="description">
+                            <h3>{name}</h3>
+                            <h4>{profession}</h4>
+                        </div>
+                    </div>
+                    <div className="post__content">
+                        <p>{message}</p>
+                        <img src={photoUrl} alt=""/>
+                    </div>
                 </div>
-            </div>
-            <div className="post__content">
-                <p>{message}</p>
-                <img src={photoUrl} alt=""/>
             </div>
 
             <div className="post__buttons">
