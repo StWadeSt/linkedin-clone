@@ -4,19 +4,20 @@ import Header from './Components/Header';
 import LeftSideBar from './Components/LeftSideBar';
 import RightSideBar from './Components/RightSideBar';
 import LiveFeed from './Components/LiveFeed';
+import profile_image from './images/profile_image.jpg'
 
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      
+      <Header avatar={profile_image} />
 
-      <body>
-        <LeftSideBar />
+      <div className="app__body">
+        <LeftSideBar avatar={profile_image} />
         <LiveFeed />
         <RightSideBar />
-      </body>
+      </div>
+      
     </div>
   );
 }

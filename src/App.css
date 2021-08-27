@@ -1,1 +1,12 @@
+.app__body {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
+.app {
+  background-color: #f3f2ef;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,10 +1,19 @@
 import React from 'react'
+import './LiveFeed.css'
+import CreateIcon from '@material-ui/icons/Create'
 
 function LiveFeed() {
     return (
-        <div>
-            <h1>LiveFeed</h1>
-            
+        <div className="feed">
+            <div className="feed__inputContainer">
+                <div className="feed__input">
+                    <CreateIcon />
+                    <form>
+                        <input type="text"/>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
         </div>
     )
 }
