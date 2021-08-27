@@ -19,6 +19,7 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .sidebar__top > h4 {
@@ -47,6 +48,7 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top: none;
+  cursor: pointer;
 }
 
 .sidebar__stat {
@@ -83,7 +85,8 @@
   cursor: pointer;
 }
 
-.sidebar__recentItem:hover {
+.sidebar__recentItem:hover,
+.sidebar__group:hover {
   border-radius: 10px;
   cursor: pointer;
   color: black;
