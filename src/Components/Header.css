@@ -4,11 +4,13 @@
   z-index: 999;
   display: flex;
   margin-bottom: 10px;
-  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: 5px;
   justify-content: space-evenly;
   border-bottom: 0.1px solid lightgray;
   width: 100%;
+  background-color: white;
 }
 .linkedIn__logo {
   object-fit: contain;

@@ -1,0 +1,19 @@
+.option {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  padding: 20px;
+
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: lightgray;
+  border-radius: 10px;
+  color: black;
+}
+
+.option > h4 {
+  margin-left: 5px;
+}

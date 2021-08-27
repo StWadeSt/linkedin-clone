@@ -34,3 +34,17 @@
   font-weight: 600;
   outline-width: 0;
 }
+
+.feed__input > form > button {
+  display: none;
+}
+
+.post__button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.feed__inputOptions {
+  display: flex;
+  justify-content: space-evenly;
+}

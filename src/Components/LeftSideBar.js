@@ -44,7 +44,7 @@ function LeftSideBar({avatar}) {
 
             </div>
 
-            <div className="sidebar__button">
+            <div className="sidebar__bottom">
                 <div className="categories">
                     <p className="recents__title">Recent</p>
                     {recentItem('react.js')}
